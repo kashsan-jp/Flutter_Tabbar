@@ -18,12 +18,12 @@ class _HomePageState extends State<HomePage> {
       length: 3,
       child: Scaffold(
         appBar: AppBar(
-          title: Text('TAB BAR'),
+          title: const Text('TAB BAR'),
           centerTitle: true,
         ),
-        body: Column(
+        body: const Column(
           children: [
-            const TabBar(
+            TabBar(
               tabs: [
                 Tab(icon: Icon(
                   Icons.home, 
