@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'tabs/first_tab.dart';
+import 'tabs/medical.dart';
 import 'tabs/second_tab.dart';
 import 'tabs/third_tab.dart';
 
@@ -15,7 +16,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 3,
+      length: 4,
       child: Scaffold(
         appBar: AppBar(
           title: const Text('TAB BAR'),
@@ -37,6 +38,11 @@ class _HomePageState extends State<HomePage> {
                 ),
                 Tab(icon: Icon(
                   Icons.person_add_alt_rounded, 
+                  color: Colors.deepPurple,
+                  ),
+                ),
+                Tab(icon: Icon(
+                  Icons.medical_services, 
                   color: Colors.deepPurple,
                   ),
                 ),
@@ -66,6 +72,7 @@ class _HomePageState extends State<HomePage> {
                 FirstTab(),
                 SecondTab(),
                 ThirdTab(),
+                Medical(),
               ],),
             ),
           ],
